@@ -1,0 +1,92 @@
+/* global style */
+
+body {
+    padding-bottom: 200px;
+}
+
+/* relative box */
+
+.grey {
+    width: 150px;
+    height: 150px;
+    background-color: lightcoral;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+/* absolute box */
+
+.parent {
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    position: relative; 
+     
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;  
+}
+/* fixed box */
+
+.fixed-box {
+    width: 120px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    
+}
+/* sticky box */
+
+.sticky {
+    background-color: orange;
+    padding: 20px;
+
+    position: sticky;
+    top:0;
+}
+
+.content {
+    background-color: red;
+}
+/* z-index box */
+
+.z-container {
+    position: relative;
+    height: 400px;
+}
+
+.z-red {
+    background-color: red;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+
+.z-blue {
+    background-color: blue;
+    z-index: 2;
+    top: 80px;
+    left: 80px;
+}
+
+.z-grey {
+    background-color: grey;
+    z-index: 3;
+     top: 100px;
+    left: 100px;
+}
+ 
+.c {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
