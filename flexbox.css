@@ -1,0 +1,47 @@
+/* container parent */
+.container {
+    display: flex;
+    background-color: green;
+    padding: 20px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+/* box child */
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: steelblue;
+    color: white;
+    margin: 10px;
+}
+
+/* justify-content */
+.justify {
+    display: flex;
+    background-color: green;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* align-items */
+.align {
+    display: flex;
+    background-color: green;
+    padding: 20px;
+    height:200px;
+    border: 3px dashed black;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* flex-direction */
+.flex {
+    display: flex;
+    background-color: green;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+}
