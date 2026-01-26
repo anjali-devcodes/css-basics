@@ -1,0 +1,86 @@
+/* simple transition hover effect */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.box:hover {
+    background-color: tomato;
+}
+
+/* multiple properties transition */
+.box-multiple {
+    width: 150px;
+    height: 150px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 0.2s ease;
+}
+
+.box-multiple:hover {
+    transform:scale(1.2);
+    opacity: 0.7;
+    background-color: red;
+}
+
+/* button transition */
+.btn {
+    padding: 12px 24px;
+    border-radius: 40%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: gray;
+    transform: translateX(7px);
+}
+
+/* keyframe */
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-top: 10px;
+    animation: move 2s ease infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+/* loader animation */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 8px solid lightgray;
+    border-top: 8px solid black;
+    border-radius: 50px;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }  
+}
